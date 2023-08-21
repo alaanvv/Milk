@@ -16,8 +16,10 @@ I beat the whole Dark Souls Saga, why not this?
 # Add/Fix
 
 - Everything '-'
-- Mathematic basic stuff like sum and division
 - Variables
+  
+- Sum, substraction, multiplication, division
+- And, or, not
 
 ---
 
