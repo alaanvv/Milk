@@ -29,4 +29,7 @@ I beat the whole Dark Souls Saga, why not this?
   seems to be important as commands or basic  
   things
 - I will do the `asm` part first, so then I'll  
-  see how to join everything  
+  see how to join everything
+- This project is so fucking impossible so I'll often interrupt it
+- I can start doing it in the wrong way (idk what's the right way), like, using python or javascript with some regex to replace the code by assembly
+- Divide the code in lines, splitting on \n, then divide this lines in parts, splitting on spaces, so I can iterate this to read the commands
