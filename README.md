@@ -18,3 +18,13 @@ I beat the whole Dark Souls Saga, why not this?
 - Everything '-'
 - Mathematic basic stuff like sum and division
 - Variables
+
+---
+
+# Notes
+
+- `asm` folder will store Assembly codes that  
+  seems to be important as commands or basic  
+  things
+- I will do the `asm` part first, so then I'll  
+  see how to join everything  
