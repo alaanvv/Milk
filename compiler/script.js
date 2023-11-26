@@ -12,18 +12,13 @@ const commands = ['set']
 // ---
 for (i in lines) {
   const line = lines[i]
-  const lineNumber = i + 1
+  const lineNumber = Number(i) + 1
   const command = line[0]
   const args = line.slice(1)
 
   if (!commands.includes(command)) error('keyword', lineNumber, line)
 
-  try { 
-    const responseCode = run(command, args)
-    if (responseCode.data) asm.insData(responseCode.data)
-    if (responseCode.text) asm.insText(responseCode.text)
-  }
-  catch (errType) { error(errType, lineNumber, line) }
+  run(command, asm, {args, line: line.join(' '), err: type => error(type, lineNumber, line)})
 }
 
 asm.write('code')

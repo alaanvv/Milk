@@ -1,3 +1,3 @@
-module.exports = (command, args) => {
-  return require(`./commands/${command}`)(args)
+module.exports = (command, asm, ctx) => {
+  return require(`./commands/${command}`)(asm, ctx)
 }

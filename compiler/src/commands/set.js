@@ -1,16 +1,14 @@
 const Sy = require('../syntax')
 
-module.exports = args => {
-  const plain = args.join(' ')
-  if (!Sy.set(plain)) throw 'syntax'
+module.exports = (asm, ctx) => {
+  if (!Sy.set(ctx.line)) ctx.err('syntax')
 
-  const name = args[0]
-  if (!Sy.varName(plain)) throw 'naming'
-  let value = args[2]
-  if (!Sy.num(plain)) throw 'value'
+  const name = ctx.args[0]
+  if (!Sy.varName(ctx.line)) ctx.err('naming')
+  let value = ctx.args[2]
+  if (!Sy.num(ctx.line)) ctx.err('value')
   value = `0x${value.toString(16)}`
-
   const data = `${name}: .word ${value}`
 
-  return { data }
+  asm.insData(data)
 }
