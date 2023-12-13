@@ -1,6 +1,6 @@
 ## Entry point
 
-The program runs from a label `_start`, wich need to be set global
+The program runs from a label `_start`, which need to be set global
 
 ```asm
 global _start
