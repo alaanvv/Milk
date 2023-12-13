@@ -1,5 +1,9 @@
 # Milk
 
+`Well, I recently started using C and now I want to continue this in C`  
+`I also started looking at asm64 instead of ARMv7`  
+`Mixing this things, I'm moving down this branch and restarting this project`  
+
 Milk's purpose is to be completelly simple  
 Made only because I want to know how  
 programming languages are made  
